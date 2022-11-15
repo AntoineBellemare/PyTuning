@@ -277,7 +277,7 @@ def create_scala_tuning(scale, name):
         if type(degree) == sp.Rational and type(sp.fraction(degree)[0]) == sp.Integer and \
             type(sp.fraction(degree)[1]) == sp.Integer:
                 representation = "%s" % degree
-        elif type(degree) == sp.Integer or type(degree) == sp.One:
+        elif type(degree) == sp.Integer or type(degree) == 1:
             representation = "%s/1" % degree
         else:
             representation = "%0.5f" % ratio_to_cents(degree)
